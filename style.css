@@ -1,0 +1,84 @@
+/**
+*Those Vars
+*/
+.form {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 10em;
+}
+
+.form label {
+  display: block;
+  text-align: left;
+  color: white;
+  font-size: .875em;
+}
+
+.form form .text-input {
+  overflow: hidden;
+  margin-bottom: .875em;
+}
+
+.form form input[type="email"],
+.form form input[type="password"] {
+  width: 100%;
+  padding: 1em 0 12px;
+  padding-left: 0;
+  background: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid #999;
+  /*Some sibling magic happens */
+}
+
+.form form input[type="email"]:focus + .separator,
+.form form input[type="password"]:focus + .separator {
+  -webkit-transform: scaleX(1) translateY(-2px);
+          transform: scaleX(1) translateY(-2px);
+  opacity: 1;
+}
+
+.separator {
+  height: 3px;
+  width: 100%;
+  background: #68B3FF;
+  display: block;
+  -webkit-transform: scaleX(0) translateY(-2px);
+          transform: scaleX(0) translateY(-2px);
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+/**
+* Form Reset - remove focus highlighting
+*/
+* :focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+body {
+  font-family: Roboto;
+  background: #282F32;
+}
+
+body a {
+  color: #3599FF;
+  font-size: 1em;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
