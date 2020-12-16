@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1>back-chat</h1>
+<h2>back-chat</h2>
  
 <!-- action="chat.php" -->
 <form method="post" >
